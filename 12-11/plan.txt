@@ -1,0 +1,24 @@
+|- Type Conversion
+1 + "1"  -*/
+"1" + 1   -*/
+Number(), parseInt(), parseFloat(), String(), .toString()
+
+Convert variables to Boolean
+null == true
+null == false
+undefined == true
+undefined == false
+null == undefined
+-1,-2,-3,0,1,2,3 - false,true
+
+|- Basic Operators
++ - * / % ** ++ -- () +=
+
+|- Comparisons
+< > == === <= >=
+"A">"a"
+"something"==="something"
+"something1">"something2"
+
+|- Logical Operators
+OR AND NOT
