@@ -1,0 +1,23 @@
+) Optional chaining ?
+
+) 123
+) 20.242
+) 12213_123123 + 1
+) +'10_1' // NaN
+) 12312e2
+
+) 0.1 + 0.2 === 0.3 // false - strange...
+) console.log(0.1 + 0.2) // false;
+) console.log(0.1 + 0.7) // false;
+) console.log(Number((0.1 + 0.7).toFixed())) // false; toFixed(1)
+) console.log(0.1 + 0.2) // false; with Number(), parseInt(), parseFloat(), eval() or Number.eval()
+
+) binary, octal, decimal, hexadecimal
+) num = 5;
+) num.toString(2) // 101
+) str = '101'
+) parseInt(str, 2) // 5
+
+) Object.is(num)
+
+) 9_999_999_999_999_999 - strange
