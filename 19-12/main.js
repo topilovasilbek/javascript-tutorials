@@ -1,28 +1,108 @@
-// 1 - Error nimada?
-/* class Animal {
-  constructor(name) {
-    this.name = name;
+// function test() {}
+
+// {} this
+
+/* class Test {
+  constructor(second) {
+    this.second = second;
+  }
+  name = "Asilbek";
+  getName() {
+    return this.second;
   }
 }
 
-class Rabbit extends Animal {
-  constructor(name) {
-    // super(); super method qolib ketgan
-    this.name = name;
-    this.created = Date.now();
+let a = new Test("Muslimbek");
+
+console.log(typeof Test); */
+
+/* class Test {
+  name = "Asilbek";
+  ['asdasd  asd'] = 10;
+  get funcName() {
+    return this.name;
+  }
+  set funcName(value) {
+    this.name = value;
   }
 }
 
-let rabbit = new Rabbit("White Rabbit");
-console.log(rabbit.name); */
+let a = new Test("Muslimbek");
 
-// 2 - Error nimada?
-class Rabbit extends Object {
-  constructor(name) {
-    // super(); super method qo`yish kerak yoki extends Object ni olib tashlash kerak
-    this.name = name;
+a.funcName = "Muslimbek";
+
+console.log(a.funcName); */
+
+/* class A {
+  constructor(hey) {
+    console.log(hey);
+  }
+  a_name = "Asilbek";
+  getName() {
+    return this.a_name;
   }
 }
 
-let rabbit = new Rabbit("Rab");
-console.log(rabbit.hasOwnProperty("name"));
+class B extends A {
+  constructor() {
+    super('Hey')
+    console.log('I am constructor');
+  }
+
+}
+
+console.log(new B().getName()); */
+
+/* class Parent {
+  name = "webbrain";
+  constructor() {
+    console.log(this.name);
+  }
+}
+
+class Child extends Parent {
+  name = "wba";
+}
+
+new Parent()
+new Child() */
+
+/* class Parent {
+  surname = "webbrain";
+}
+
+class Child {
+  #name = "wba";
+  getName() {
+    return this.#name;
+  }
+} */
+
+// Child.__proto__ = Parent;
+/* 
+console.log(new Parent());
+Object.assign(new Child().__proto__, new Parent())
+console.log(new Child());
+console.log(new Child().surname); */
+
+// console.log(new Child() instanceof Function);
+
+/* let child = new Child();
+
+console.log(child.getName()); */
+
+class Test {
+  static age = 0;
+  static addAge() {
+    console.log(++this.age);
+  }
+}
+
+let a = new Test();
+let b = new Test();
+
+Test.addAge()
+Test.addAge()
+Test.addAge()
+Test.addAge()
+Test.addAge()
