@@ -91,7 +91,7 @@ console.log(new Child().surname); */
 
 console.log(child.getName()); */
 
-class Test {
+/* class Test {
   static age = 0;
   static addAge() {
     console.log(++this.age);
@@ -105,4 +105,66 @@ Test.addAge()
 Test.addAge()
 Test.addAge()
 Test.addAge()
-Test.addAge()
+Test.addAge() */
+
+// Classes in JS || Revision
+/* class Test {
+  name = "Asilbek";
+  myFunc() {
+    console.log("my func " + this.name);
+  };
+  get getStmh() {
+    return this.name;
+  };
+  set getSmth(value) {
+    this.name = value;
+  };
+  ["asilbek" + "Topilov"](v) {
+    return v
+  };
+  ['a'+4+5] = 'a---4---5';
+} */
+
+// let a = new Test();
+// let b = new Test();
+
+// console.log(a.getStmh);
+
+// console.log(a);
+// console.log(b);
+
+// console.log(Test());
+
+
+// console.log(a.asilbekTopilov('Muslimbek'));
+
+// a.getSmth = "Muslimbek";
+// console.log(a.getStmh);
+
+// console.log(typeof Test); // function
+
+// console.log(a);
+// a.myFunc();
+// console.log(a.name);
+
+class Fruits {
+  constructor() {
+    this.name = 'Asilbek'
+  }
+}
+
+class Apple extends Fruits {
+  surname = 'Topilov'
+  constructor() {
+    super();
+    this.surname = this.name
+  }
+  getName() {
+    return this.name
+  }
+}
+
+let fruits = new Fruits();
+let apple = new Apple();
+
+console.log(apple.surname);
