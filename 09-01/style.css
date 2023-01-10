@@ -1,0 +1,14 @@
+/* button {
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: brown;
+    color: #fff;
+    cursor: pointer;
+} */
+
+.con {
+    padding: 20px;
+    border: 4px solid red;
+    max-width: 300px;
+}
