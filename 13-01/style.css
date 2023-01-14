@@ -1,0 +1,29 @@
+button {
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    background-color: brown;
+    color: #fff;
+    cursor: pointer;
+}
+
+input {
+    margin: 20px 0 0;
+    border: 2px solid blue;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px 15px;
+    background-color: #fff;
+}
+
+div {
+    font-size: 2rem;
+}
+
+.box {
+    margin: 20px 0;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
